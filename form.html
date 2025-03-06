@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แบบฟอร์มลงทะเบียน</title>
+</head>
+<body>
+    <h1 align="center">แบบฟอร์มการลงทะเบียน</h1>
+    <div>
+        <form id = "form1" align = "center">
+            <!-- input txt name lastname -->
+            <label for ="name">ชื่อ-นามสกุล</label>
+            <input type = "text" id = "textname" placeholder="ป้อนชื่อ-นามสกุล" autofocus="autofocus" maxlength="50" required/>
+
+            <!-- input txt address -->
+            <label for ="address">ป้อนที่อยู่</label>
+            <input type = "text" id = "textaddrees" placeholder="ป้อนที่อยู่" autofocus="autofocus" maxlength="100" required/>
+
+            <!-- input date birthday -->
+            <label for ="birthday">วันเกิด</label>
+            <input type = "date" id = "birthday" placeholder="เลือกวันเกิด">
+        
+            <!-- input sex -->
+            <label for = "sex">เพศ :</label>
+            <select name="sex" id="sex">เพศ>
+                <option value="ชาย" selected>ชาย</option>
+                <option value="หญิง">หญิง</option>
+                <option value="LGBT">LGBT</option>
+                <option value="ไม่ระบุ">ไม่ระบุ</option>
+            </select>
+
+            <!-- input age number -->
+            <label for ="age">อายุ</label>
+            <input type = "number" id = "age" maxlenght = "placehoder"="ป้อนอายุ">
+            
+            <br><br>
+
+            <!-- input checkbox -->
+            <h5>ความสามารถพิเศษ</h5>
+            <input type="checkbox" id="html" type="html" value="html"/> HTML <br>
+            <input type="checkbox" id="PHP" type="php" value="php"/> PHP <br>
+            <input type="checkbox" id="css" type="css" value="css"/> CSS <br>
+             
+            <br><br>
+            <button type="submit">บันทึก</button>
+            <button type="button">ยกเลิก</button>
+        </form>
+    </div>
+</html>
